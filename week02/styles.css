@@ -1,0 +1,41 @@
+body {
+	background-color: black;
+}
+
+h1, p, footer {
+	color: white;
+	padding-left: 20px;
+}
+
+.navLinks {
+	padding: 50px;
+}
+
+a:link {
+	color: lightpink;
+}
+
+a:visited {
+	color: hotpink;
+}
+
+a:hover {
+	color: purple;
+}
+
+p {
+	font-size: 22px;
+	font-weight: thick;
+	font-family: "Times New Roman", Times, serif;
+	width: 90%;
+}
+
+footer h5 {
+	/* NEW CSS PROPERTY IS text-align AND position */
+	text-align: center;
+	position: fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:30px;
+}
