@@ -1,0 +1,96 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.jpg');
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper */
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4a261;
+    color: white;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #264653;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Section and Articles */
+section {
+    margin-bottom: 30px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #2a9d8f;
+    position: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #264653;
+    color: white;
+    float: bottom;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:30px;
+}
+
+footer a {
+    color: white;
+}
+
+
+/* Link Styling */
+a:hover {
+    color: #e76f51;
+}
+
+/* Box Properties */
+section, article, nav ul li {
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+section, article {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
