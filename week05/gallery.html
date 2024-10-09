@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Theme - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Gallery of Fuscia</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <article>
+                    <h2>Visuals Featuring Fuscia</h2>
+                    <div class="gallery">
+                        <img src="images/f1.jpg"/>
+                        <img src="images/f2.jpg"/>
+                        <img src="images/f3.webp"/>
+                        <img src="images/f4.jpg"/>
+                    </div>
+
+            <h3>Vote for Your Favorite Fuchsia Image!</h3>
+                <form action="#" method="POST">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="vote">Which image do you like the most?</label>
+                    <select id="vote" name="vote">
+                        <option value="fuchsia-dress">Fuchsia Dress</option>
+                        <option value="fuchsia-top">Fuchsia Top</option>
+                        <option value="fuchsia-hair">Fuchsia Hair</option>
+                        <option value="fuchsia-wed">Fuchsia Bridesmaid Dresses</option>
+                    </select>
+
+                    <input type="submit" value="Submit">
+                </form>
+
