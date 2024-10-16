@@ -1,0 +1,74 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styling the links */
+.link {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Shapes */
+.shape {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+/* Circle */
+.circle {
+    background-color: #FF5722;
+    border-radius: 50%;
+}
+
+/* Square */
+.square {
+    background-color: #3F51B5;
+}
+
+/* Triangle */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #4CAF50;
+}
+
+/* Oval */
+.oval {
+    background-color: #FFEB3B;
+    border-radius: 50%/25%;
+    width: 150px;
+    height: 80px;
+}
+
+/* Rectangle */
+.rectangle {
+    background-color: #673AB7;
+    width: 150px;
+    height: 80px;
+}
+
+/* Adding some basic hover effect to links */
+.link:hover {
+    color: #FF5722;
+}
