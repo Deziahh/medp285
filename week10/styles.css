@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2f4f4f;
+    background-color: #f0f5f3;
+    margin: 0;
+}
+
+header {
+    background-color: #8fbdb9;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}
+
+.garden-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #556b2f;
+    padding: 1em;
+}
+
+.garden-nav a {
+    color: #f0f5f3;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+.garden-section {
+    padding: 2em;
+    margin: 1em 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card {
+    background-color: #e7f0eb;
+    border: 2px solid #8fbdb9;
+    border-radius: 8px;
+    padding: 1em;
+    width: calc(50% - 1em);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card h3 {
+    color: #2f4f4f;
+    font-family: 'Playfair Display', serif;
+    margin-top: 0.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #556b2f;
+    color: #f0f5f3;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.welcome-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #556b2f;
+    color: #f0f5f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+}
+
+.welcome-button:hover {
+    background-color: #6b8e23;
+}
+
+#welcome-message {
+    display: block;
+    text-align: center; 
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
