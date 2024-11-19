@@ -99,3 +99,5 @@ function draw() {
     circleSpeedY = -circleSpeedY;
   }
 }
+
+//LINK I EDITED: https://p5js.org/examples/animation-and-variables-conditions/
