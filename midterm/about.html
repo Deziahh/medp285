@@ -18,15 +18,23 @@
             color: #2e8b57; /* SeaGreen */
         }
 
-        .grid {
+        .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            width: 80%;
-            margin-top: 30px;
+            width: 90%;
+            max-width: 1200px;
         }
 
-        .block {
+        iframe {
+            width: 100%;
+            height: 500px;
+            aspect-ratio: 16 / 9; /* Maintain a 16:9 ratio */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /*.block {
             background-color: #f4f4f4;
             width: 100%;
             height: 150px;
@@ -40,28 +48,28 @@
         }
 
         .block:hover {
-            background-color: #4682b4; /* SteelBlue */
+            background-color: #4682b4; 
             color: #fff;
             transform: scale(1.05);
-        }
+        }*/
     </style>
 </head>
 <body>
 
-    <h1>Who Am I?</h1>
+    <h1>Projects</h1>
 
-    <div class="grid">
-        <div class="block">20</div>
-        <div class="block">04.04.04</div>
-        <div class="block">God/Everything</div>
+    <div class="grid-container">
+        <div class="block"><iframe src="https://editor.p5js.org/Deziahh/full/XzV3cuemI" ></iframe></div>
+        <div class="block"><iframe src="https://editor.p5js.org/Deziahh/full/X90AORZ97"></iframe></div>
+        <!-- <div class="block">God/Everything</div>
         <div class="block">Code Is Life</div>
         <div class="block">A Creative</div>
-        <div class="block">Grateful</div>
+        <div class="block">Grateful</div> -->
     </div>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html">Projects</a>
         <a href="connection.html">Connection</a>
     </nav>
 

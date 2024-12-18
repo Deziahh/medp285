@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm: Page1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .line {
+            font-size: 24px;
+            margin: 20px 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .burst-effect {
+            color: #fff;
+            background: #ff4500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .burst-effect:hover {
+            color: transparent;
+        }
+
+        .circle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ff4500;
+            border-radius: 50%;
+            animation: fall 1.5s forwards ease-in;
+            opacity: 0.9;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(300px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="line">My name is Deziah.</div>
+        <div class="line">Creative code is new to me.</div>
+        <div class="line burst-effect" id="burst-effect">But it's just the right thing to let my creativity free</div>
+        <div class="line">Hover to see words transform.</div>
+    </div>
+
+    <section class="creative-statement">
+        <h2>Creative Statement</h2>
+        <p>Creativity is the bridge between imagination and reality. Through coding, I translate ideas into interactive experiences that inspire, provoke, and connect.</p>
+    </section>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="connection.html">Connection</a>
+    </nav>
+
+    <footer>
+        Inspired by <a href="https://httpoetics-anthology.glitch.me/">Web Poetics Anthology</a>
+    </footer>
+
+    <script>
+        document.getElementById('burst-effect').addEventListener('mouseover', function(e) {
+            const line = e.target;
+            const rect = line.getBoundingClientRect();
+
+            for (let i = 0; i < 30; i++) {
+                const circle = document.createElement('div');
+                circle.className = 'circle';
+                document.body.appendChild(circle);
+
+                const x = rect.left + Math.random() * rect.width;
+                const y = rect.top + Math.random() * rect.height;
+
+                circle.style.left = `${x}px`;
+                circle.style.top = `${y}px`;
+
+                circle.addEventListener('animationend', () => circle.remove());
+            }
+
+            line.style.visibility = 'hidden';
+        });
+    </script>
+
+</body>
+</html>

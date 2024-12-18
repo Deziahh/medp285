@@ -1,63 +1,82 @@
 body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f4f4f4; /* Light grey */
-            font-family: 'Roboto Mono', monospace;
-        }
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Light grey */
+    font-family: 'Roboto Mono', monospace;
+}
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-        .line {
-            font-size: 2em;
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border: 2px solid #000;
-            transition: background-color 0.5s, color 0.5s, transform 0.5s, font-family 0.5s;
-        }
+.line {
+    font-size: 2em;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s, font-family 0.5s;
+}
 
         /* Interaction: Change font and background on hover */
         .line:hover {
-            background-color: #ff4500; /* OrangeRed */
+            background-color: #869f77;
             color: #fff;
             font-family: 'Playfair Display', serif;
             transform: rotate(-2deg) scale(1.1);
         }
 
         .line:nth-child(even):hover {
-            background-color: #4682b4; /* SteelBlue */
+            background-color: #E7B5AC;
             transform: rotate(3deg) scale(1.05);
         }
 
-        footer {
-            margin-top: 50px;
-            font-size: 1.2em;
-            color: #000080; /* Navy */
+        .creative-statement {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
-        footer a {
-            color: #ff6347; /* Tomato */
-            text-decoration: none;
-        }
-        nav {
-            margin-top: 20px;
-        }
+.creative-statement h2 {
+    text-align: center;
+    color: #588061;
+}
 
-        nav a {
-            color: #000080; /* Navy */
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
+a {
+    color: #588061;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #869f77;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #E7B5AC;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
 
 
